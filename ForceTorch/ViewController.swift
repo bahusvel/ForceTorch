@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var displayView: DisplayView!
 	@IBOutlet weak var buttonView: ButtonView!
 	
-    let camera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    static let camera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+	static var currentBrightness: Float = 0.0
 	var buttonLocked = false
 	var buttonStart: CGFloat = 0.0
 	var buttonDiameter: CGFloat = 0.0
@@ -24,14 +25,42 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 		buttonStart = buttonView.center.y
 		buttonDiameter = buttonView.frame.height
+		setDisplay(ViewController.currentBrightness)
+		if ViewController.currentBrightness > 0.0 {
+			buttonView.center.y = buttonDiameter / 2
+		}
         // Do any additional setup after loading the view, typically from a nib.
     }
+	
+	func setDisplay(power: Float){
+		displayView.power = power
+		displayView.setNeedsDisplay()
+	}
+	
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .LightContent
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	static func setTorch(level: Float){
+		do {
+			try camera.lockForConfiguration()
+			if level == 0.0 {
+				camera.torchMode = .Off
+			} else {
+				try camera.setTorchModeOnWithLevel(level)
+			}
+			currentBrightness = level
+			camera.unlockForConfiguration()
+		} catch {
+			print("Error could not change the flashlight brightness")
+		}
+	}
+	
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first where traitCollection.forceTouchCapability == .Available{
 			if touch.view == buttonView {
@@ -45,19 +74,8 @@ class ViewController: UIViewController {
 					buttonView.center.y = touchPoint.y
 				}
 				let touchForce = Float(touch.force / touch.maximumPossibleForce)
-				displayView.power = touchForce
-				displayView.setNeedsDisplay()
-				do {
-					try camera.lockForConfiguration()
-					if touchForce == 0.0 {
-						camera.torchMode = .Off
-					} else {
-						try camera.setTorchModeOnWithLevel(touchForce)
-					}
-					camera.unlockForConfiguration()
-				} catch {
-					print("Error could not change the flashlight brightness")
-				}
+				setDisplay(touchForce)
+				ViewController.setTorch(touchForce)
 			}
         }
     }
@@ -65,15 +83,8 @@ class ViewController: UIViewController {
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
 		if !buttonLocked {
 			buttonView.center.y = buttonStart
-			displayView.power = 0.0
-			displayView.setNeedsDisplay()
-			do {
-				try camera.lockForConfiguration()
-				camera.torchMode = .Off
-				camera.unlockForConfiguration()
-			} catch {
-				print("Error could not change the flashlight brightness")
-			}
+			setDisplay(0.0)
+			ViewController.setTorch(0.0)
 		} else {
 			buttonView.center.y = buttonDiameter / 2
 		}

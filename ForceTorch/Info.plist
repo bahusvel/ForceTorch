@@ -26,6 +26,21 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Full Brightness</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.bahus.ForceTorch.fullbrightness</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Lowest Brightness</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.bahus.ForceTorch.lowestbrightness</string>
+		</dict>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

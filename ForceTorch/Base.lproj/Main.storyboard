@@ -51,6 +51,7 @@
                             <constraint firstItem="H2Z-bj-ik5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pu7-gw-4vE"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="buttonView" destination="P5Z-dk-T9Y" id="BaS-8d-yT3"/>
