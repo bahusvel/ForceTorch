@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,11 +13,50 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BackgroundView" customModule="ForceTorch" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2Z-bj-ik5" customClass="SliderView" customModule="ForceTorch" customModuleProvider="target">
+                                <rect key="frame" x="138" y="123" width="138" height="284"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5Z-dk-T9Y" customClass="ButtonView" customModule="ForceTorch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="146" width="138" height="138"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="jil-If-tWB"/>
+                                            <constraint firstAttribute="height" constant="138" id="wDN-m8-oD5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="P5Z-dk-T9Y" firstAttribute="centerX" secondItem="H2Z-bj-ik5" secondAttribute="centerX" id="6DZ-pa-ttO"/>
+                                    <constraint firstAttribute="height" constant="284" id="9gZ-Tt-kNC"/>
+                                    <constraint firstAttribute="width" constant="138" id="JR9-s7-j88"/>
+                                    <constraint firstAttribute="bottom" secondItem="P5Z-dk-T9Y" secondAttribute="bottom" id="ncu-FB-pPo"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eT-ry-RVk" customClass="DisplayView" customModule="ForceTorch" customModuleProvider="target">
+                                <rect key="frame" x="69" y="462" width="276" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="Cwg-IO-s5G"/>
+                                    <constraint firstAttribute="height" constant="184" id="Wcw-ts-uv7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7eT-ry-RVk" secondAttribute="bottom" constant="90" id="MXT-eT-HMY"/>
+                            <constraint firstItem="7eT-ry-RVk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sk1-Qp-S4g"/>
+                            <constraint firstItem="H2Z-bj-ik5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="Z2Q-AJ-gOE"/>
+                            <constraint firstItem="H2Z-bj-ik5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pu7-gw-4vE"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="buttonView" destination="P5Z-dk-T9Y" id="BaS-8d-yT3"/>
+                        <outlet property="displayView" destination="7eT-ry-RVk" id="P9L-mP-YxT"/>
+                        <outlet property="sliderView" destination="H2Z-bj-ik5" id="znA-bV-vHG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

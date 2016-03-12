@@ -12,6 +12,11 @@
 		A80BE4FA1C537AF90052EFA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80BE4F81C537AF90052EFA5 /* Main.storyboard */; };
 		A80BE4FC1C537AF90052EFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80BE4FB1C537AF90052EFA5 /* Assets.xcassets */; };
 		A80BE4FF1C537AF90052EFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80BE4FD1C537AF90052EFA5 /* LaunchScreen.storyboard */; };
+		A813465B1C94434600E03D76 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813465A1C94434600E03D76 /* BackgroundView.swift */; };
+		A813465D1C94435700E03D76 /* ForceTorchKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813465C1C94435700E03D76 /* ForceTorchKit.swift */; };
+		A813465F1C94450200E03D76 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813465E1C94450200E03D76 /* SliderView.swift */; };
+		A81346611C9445D900E03D76 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81346601C9445D900E03D76 /* ButtonView.swift */; };
+		A81346631C94470800E03D76 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81346621C94470800E03D76 /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A80BE4FB1C537AF90052EFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80BE4FE1C537AF90052EFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A80BE5001C537AF90052EFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A813465A1C94434600E03D76 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		A813465C1C94435700E03D76 /* ForceTorchKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceTorchKit.swift; sourceTree = "<group>"; };
+		A813465E1C94450200E03D76 /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		A81346601C9445D900E03D76 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A81346621C94470800E03D76 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				A80BE4F41C537AF90052EFA5 /* AppDelegate.swift */,
 				A80BE4F61C537AF90052EFA5 /* ViewController.swift */,
 				A80BE4F81C537AF90052EFA5 /* Main.storyboard */,
+				A81346621C94470800E03D76 /* DisplayView.swift */,
+				A81346601C9445D900E03D76 /* ButtonView.swift */,
+				A813465E1C94450200E03D76 /* SliderView.swift */,
+				A813465A1C94434600E03D76 /* BackgroundView.swift */,
+				A813465C1C94435700E03D76 /* ForceTorchKit.swift */,
 				A80BE4FB1C537AF90052EFA5 /* Assets.xcassets */,
 				A80BE4FD1C537AF90052EFA5 /* LaunchScreen.storyboard */,
 				A80BE5001C537AF90052EFA5 /* Info.plist */,
@@ -96,7 +111,7 @@
 				TargetAttributes = {
 					A80BE4F01C537AF90052EFA5 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = J5W4G42D9A;
+						DevelopmentTeam = THZ88VX669;
 					};
 				};
 			};
@@ -137,7 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80BE4F71C537AF90052EFA5 /* ViewController.swift in Sources */,
+				A81346631C94470800E03D76 /* DisplayView.swift in Sources */,
+				A813465D1C94435700E03D76 /* ForceTorchKit.swift in Sources */,
+				A81346611C9445D900E03D76 /* ButtonView.swift in Sources */,
 				A80BE4F51C537AF90052EFA5 /* AppDelegate.swift in Sources */,
+				A813465B1C94434600E03D76 /* BackgroundView.swift in Sources */,
+				A813465F1C94450200E03D76 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +311,7 @@
 				A80BE5051C537AF90052EFA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
