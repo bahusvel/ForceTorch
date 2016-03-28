@@ -17,7 +17,57 @@
 		A813465F1C94450200E03D76 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A813465E1C94450200E03D76 /* SliderView.swift */; };
 		A81346611C9445D900E03D76 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81346601C9445D900E03D76 /* ButtonView.swift */; };
 		A81346631C94470800E03D76 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81346621C94470800E03D76 /* DisplayView.swift */; };
+		A88DD9111CA8CAD9006F3ECF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88DD90F1CA8CAD9006F3ECF /* Interface.storyboard */; };
+		A88DD9131CA8CAD9006F3ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88DD9121CA8CAD9006F3ECF /* Assets.xcassets */; };
+		A88DD91A1CA8CAD9006F3ECF /* WatchTorch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A88DD9191CA8CAD9006F3ECF /* WatchTorch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A88DD91F1CA8CAD9006F3ECF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DD91E1CA8CAD9006F3ECF /* InterfaceController.swift */; };
+		A88DD9211CA8CAD9006F3ECF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DD9201CA8CAD9006F3ECF /* ExtensionDelegate.swift */; };
+		A88DD9231CA8CAD9006F3ECF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DD9221CA8CAD9006F3ECF /* GlanceController.swift */; };
+		A88DD9251CA8CAD9006F3ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88DD9241CA8CAD9006F3ECF /* Assets.xcassets */; };
+		A88DD9291CA8CAD9006F3ECF /* WatchTorch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A88DD90D1CA8CAD9006F3ECF /* WatchTorch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A88DD91B1CA8CAD9006F3ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80BE4E91C537AF90052EFA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88DD9181CA8CAD9006F3ECF;
+			remoteInfo = "WatchTorch Extension";
+		};
+		A88DD9271CA8CAD9006F3ECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80BE4E91C537AF90052EFA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88DD90C1CA8CAD9006F3ECF;
+			remoteInfo = WatchTorch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A88DD92F1CA8CAD9006F3ECF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A88DD91A1CA8CAD9006F3ECF /* WatchTorch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88DD9311CA8CAD9006F3ECF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A88DD9291CA8CAD9006F3ECF /* WatchTorch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A80BE4F11C537AF90052EFA5 /* ForceTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +82,27 @@
 		A813465E1C94450200E03D76 /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		A81346601C9445D900E03D76 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		A81346621C94470800E03D76 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		A88DD90D1CA8CAD9006F3ECF /* WatchTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88DD9101CA8CAD9006F3ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A88DD9121CA8CAD9006F3ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A88DD9141CA8CAD9006F3ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88DD9191CA8CAD9006F3ECF /* WatchTorch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchTorch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88DD91E1CA8CAD9006F3ECF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A88DD9201CA8CAD9006F3ECF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A88DD9221CA8CAD9006F3ECF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A88DD9241CA8CAD9006F3ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A88DD9261CA8CAD9006F3ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A80BE4EE1C537AF90052EFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88DD9161CA8CAD9006F3ECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				A80BE4F31C537AF90052EFA5 /* ForceTorch */,
+				A88DD90E1CA8CAD9006F3ECF /* WatchTorch */,
+				A88DD91D1CA8CAD9006F3ECF /* WatchTorch Extension */,
 				A80BE4F21C537AF90052EFA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				A80BE4F11C537AF90052EFA5 /* ForceTorch.app */,
+				A88DD90D1CA8CAD9006F3ECF /* WatchTorch.app */,
+				A88DD9191CA8CAD9006F3ECF /* WatchTorch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +150,28 @@
 			path = ForceTorch;
 			sourceTree = "<group>";
 		};
+		A88DD90E1CA8CAD9006F3ECF /* WatchTorch */ = {
+			isa = PBXGroup;
+			children = (
+				A88DD90F1CA8CAD9006F3ECF /* Interface.storyboard */,
+				A88DD9121CA8CAD9006F3ECF /* Assets.xcassets */,
+				A88DD9141CA8CAD9006F3ECF /* Info.plist */,
+			);
+			path = WatchTorch;
+			sourceTree = "<group>";
+		};
+		A88DD91D1CA8CAD9006F3ECF /* WatchTorch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A88DD91E1CA8CAD9006F3ECF /* InterfaceController.swift */,
+				A88DD9201CA8CAD9006F3ECF /* ExtensionDelegate.swift */,
+				A88DD9221CA8CAD9006F3ECF /* GlanceController.swift */,
+				A88DD9241CA8CAD9006F3ECF /* Assets.xcassets */,
+				A88DD9261CA8CAD9006F3ECF /* Info.plist */,
+			);
+			path = "WatchTorch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +182,51 @@
 				A80BE4ED1C537AF90052EFA5 /* Sources */,
 				A80BE4EE1C537AF90052EFA5 /* Frameworks */,
 				A80BE4EF1C537AF90052EFA5 /* Resources */,
+				A88DD9311CA8CAD9006F3ECF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A88DD9281CA8CAD9006F3ECF /* PBXTargetDependency */,
 			);
 			name = ForceTorch;
 			productName = ForceTorch;
 			productReference = A80BE4F11C537AF90052EFA5 /* ForceTorch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A88DD90C1CA8CAD9006F3ECF /* WatchTorch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88DD9301CA8CAD9006F3ECF /* Build configuration list for PBXNativeTarget "WatchTorch" */;
+			buildPhases = (
+				A88DD90B1CA8CAD9006F3ECF /* Resources */,
+				A88DD92F1CA8CAD9006F3ECF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A88DD91C1CA8CAD9006F3ECF /* PBXTargetDependency */,
+			);
+			name = WatchTorch;
+			productName = WatchTorch;
+			productReference = A88DD90D1CA8CAD9006F3ECF /* WatchTorch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A88DD9181CA8CAD9006F3ECF /* WatchTorch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88DD92E1CA8CAD9006F3ECF /* Build configuration list for PBXNativeTarget "WatchTorch Extension" */;
+			buildPhases = (
+				A88DD9151CA8CAD9006F3ECF /* Sources */,
+				A88DD9161CA8CAD9006F3ECF /* Frameworks */,
+				A88DD9171CA8CAD9006F3ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchTorch Extension";
+			productName = "WatchTorch Extension";
+			productReference = A88DD9191CA8CAD9006F3ECF /* WatchTorch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,13 +234,20 @@
 		A80BE4E91C537AF90052EFA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Denis Lavrov";
 				TargetAttributes = {
 					A80BE4F01C537AF90052EFA5 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = THZ88VX669;
+					};
+					A88DD90C1CA8CAD9006F3ECF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = THZ88VX669;
+					};
+					A88DD9181CA8CAD9006F3ECF = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -129,6 +265,8 @@
 			projectRoot = "";
 			targets = (
 				A80BE4F01C537AF90052EFA5 /* ForceTorch */,
+				A88DD90C1CA8CAD9006F3ECF /* WatchTorch */,
+				A88DD9181CA8CAD9006F3ECF /* WatchTorch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +279,23 @@
 				A80BE4FF1C537AF90052EFA5 /* LaunchScreen.storyboard in Resources */,
 				A80BE4FC1C537AF90052EFA5 /* Assets.xcassets in Resources */,
 				A80BE4FA1C537AF90052EFA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88DD90B1CA8CAD9006F3ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88DD9131CA8CAD9006F3ECF /* Assets.xcassets in Resources */,
+				A88DD9111CA8CAD9006F3ECF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88DD9171CA8CAD9006F3ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88DD9251CA8CAD9006F3ECF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +316,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A88DD9151CA8CAD9006F3ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88DD9211CA8CAD9006F3ECF /* ExtensionDelegate.swift in Sources */,
+				A88DD91F1CA8CAD9006F3ECF /* InterfaceController.swift in Sources */,
+				A88DD9231CA8CAD9006F3ECF /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A88DD91C1CA8CAD9006F3ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88DD9181CA8CAD9006F3ECF /* WatchTorch Extension */;
+			targetProxy = A88DD91B1CA8CAD9006F3ECF /* PBXContainerItemProxy */;
+		};
+		A88DD9281CA8CAD9006F3ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88DD90C1CA8CAD9006F3ECF /* WatchTorch */;
+			targetProxy = A88DD9271CA8CAD9006F3ECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A80BE4F81C537AF90052EFA5 /* Main.storyboard */ = {
@@ -178,6 +356,14 @@
 				A80BE4FE1C537AF90052EFA5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A88DD90F1CA8CAD9006F3ECF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A88DD9101CA8CAD9006F3ECF /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +478,74 @@
 			};
 			name = Release;
 		};
+		A88DD92A1CA8CAD9006F3ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchTorch_Extension;
+				INFOPLIST_FILE = WatchTorch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.ForceTorch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A88DD92B1CA8CAD9006F3ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchTorch_Extension;
+				INFOPLIST_FILE = WatchTorch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.ForceTorch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A88DD92C1CA8CAD9006F3ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "WatchTorch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.ForceTorch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A88DD92D1CA8CAD9006F3ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "WatchTorch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.ForceTorch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -312,6 +566,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A88DD92E1CA8CAD9006F3ECF /* Build configuration list for PBXNativeTarget "WatchTorch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88DD92C1CA8CAD9006F3ECF /* Debug */,
+				A88DD92D1CA8CAD9006F3ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A88DD9301CA8CAD9006F3ECF /* Build configuration list for PBXNativeTarget "WatchTorch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88DD92A1CA8CAD9006F3ECF /* Debug */,
+				A88DD92B1CA8CAD9006F3ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
