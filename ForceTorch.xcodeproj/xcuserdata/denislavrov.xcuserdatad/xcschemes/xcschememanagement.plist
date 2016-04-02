@@ -4,10 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Complication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>ForceTorch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>WFTorch (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>WFTorch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>WatchTorch (Glance).xcscheme</key>
 		<dict>
@@ -23,6 +43,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A80BE4F01C537AF90052EFA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8679C8C1CAFD6B40043E189</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8679CB41CAFD8EF0043E189</key>
 		<dict>
 			<key>primary</key>
 			<true/>

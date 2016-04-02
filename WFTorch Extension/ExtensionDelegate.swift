@@ -1,8 +1,8 @@
 //
 //  ExtensionDelegate.swift
-//  WatchTorch Extension
+//  WFTorch Extension
 //
-//  Created by denis lavrov on 28/03/16.
+//  Created by denis lavrov on 2/04/16.
 //  Copyright © 2016 Denis Lavrov. All rights reserved.
 //
 
